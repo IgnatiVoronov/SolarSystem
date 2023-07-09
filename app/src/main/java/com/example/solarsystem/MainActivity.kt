@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
             Log.d("My logs", "clicked on: ${getString(informationModel.title)}}")
             Toast.makeText(
                 this,
-                getString(informationModel.title) + getString(informationModel.description),
+                getString(informationModel.title),
                 Toast.LENGTH_SHORT
             ).show()
 
