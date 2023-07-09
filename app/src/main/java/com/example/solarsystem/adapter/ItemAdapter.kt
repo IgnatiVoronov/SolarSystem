@@ -15,14 +15,6 @@ class ItemAdapter(
 
     class ItemViewHolder(val binding: ListItemBinding) : RecyclerView.ViewHolder(binding.root) {
 
-        /*fun bindItem(item:InformationModel){
-            with(binding) {
-                itemTitle.text = item.title
-                itemDescription.text = item.description
-                itemImage.setImageResource(item.image)
-            }
-        }*/
-
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
@@ -38,8 +30,6 @@ class ItemAdapter(
         holder.binding.itemTitle.text = context.resources.getString(currentItem.title)
         holder.binding.itemDescription.text = context.resources.getString(currentItem.description)
         holder.binding.itemImage.setImageResource(currentItem.image)
-
-        /*holder.bindItem(currentItem)*/
 
         holder.binding.root.setOnClickListener {
             itemClickListener(currentItem)
