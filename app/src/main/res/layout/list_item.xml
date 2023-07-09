@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp">
+    android:layout_margin="8dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="6dp">
 
     <LinearLayout
+        android:id="@+id/linear_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -14,16 +19,18 @@
             android:layout_width="match_parent"
             android:layout_height="194dp"
             android:importantForAccessibility="no"
-            android:scaleType="centerCrop" />
+            android:scaleType="centerCrop"
+            tools:background="@color/black" />
 
         <TextView
             android:id="@+id/item_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingStart="10dp"
-            android:paddingEnd="10dp"
             android:paddingTop="10dp"
-            android:textAppearance="?attr/textAppearanceHeadline6" />
+            android:paddingEnd="10dp"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            tools:text="Title" />
 
         <TextView
             android:id="@+id/item_description"
@@ -31,7 +38,8 @@
             android:layout_height="wrap_content"
             android:paddingStart="10dp"
             android:paddingEnd="10dp"
-            android:paddingBottom="10dp"/>
+            android:paddingBottom="10dp"
+            tools:text="TextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextText" />
 
     </LinearLayout>
 

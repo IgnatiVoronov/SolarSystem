@@ -1,33 +1,33 @@
 <resources>
     <string name="app_name">Solar System</string>
-    <string name="affirmation1">Sun</string>
-    <string name="affirmation2">Mercury</string>
-    <string name="affirmation3">Venus</string>
-    <string name="affirmation4">Earth</string>
-    <string name="affirmation5">Mars</string>
-    <string name="affirmation6">Asteroid belt</string>
-    <string name="affirmation7">Jupiter</string>
-    <string name="affirmation8">Saturn</string>
-    <string name="affirmation9">Uranus</string>
-    <string name="affirmation10">Neptune</string>
-    <string name="affirmation11">Kuiper belt</string>
-    <string name="affirmation12">Oort cloud</string>
+    <string name="title1">Sun</string>
+    <string name="title2">Mercury</string>
+    <string name="title3">Venus</string>
+    <string name="title4">Earth</string>
+    <string name="title5">Mars</string>
+    <string name="title6">Asteroid belt</string>
+    <string name="title7">Jupiter</string>
+    <string name="title8">Saturn</string>
+    <string name="title9">Uranus</string>
+    <string name="title10">Neptune</string>
+    <string name="title11">Kuiper belt</string>
+    <string name="title12">Oort cloud</string>
 
-    <string name="affirmation1_1">The Sun is the star at the center of the Solar System.
+    <string name="description1">The Sun is the star at the center of the Solar System.
         It is a nearly perfect ball of hot plasma, heated to incandescence by
         nuclear fusion reactions in its core. The Sun radiates this energy mainly as light,
         ultraviolet, and infrared radiation, and is the most important source of energy
         for life on Earth.</string>
-    <string name="affirmation2_1">Mercury is the first planet from the Sun and the
+    <string name="description2">Mercury is the first planet from the Sun and the
         smallest planet in the Solar System. It is a terrestrial planet with a heavily
         cratered surface due to the planet having no geological activity and an extremely
         tenuous atmosphere (called an exosphere).</string>
-    <string name="affirmation3_1">Venus is the second planet from the Sun. It is a rocky
+    <string name="description3">Venus is the second planet from the Sun. It is a rocky
         planet with the densest atmosphere of all the rocky bodies in the Solar System,
         and the only one with a mass and size that is close to that of its orbital neighbour
         Earth. Orbiting inferiorly (inside of Earth\'s orbit), it appears in Earth\'s sky
         always close to the Sun, as either a "morning star" or an "evening star".</string>
-    <string name="affirmation4_1">Earth is the third planet from the Sun and the only
+    <string name="description4">Earth is the third planet from the Sun and the only
         place known in the universe where life has originated and found habitability.
         Earth is a water world, the only one in the Solar System to sustain liquid
         surface water. Its ocean covers 70.8% of its crust and contains almost all of its
@@ -35,45 +35,45 @@
         ocean and land, dwarfing Earth\'s groundwater, lakes, rivers and atmospheric water.
         The other 29.2% of the Earth\'s surface is land, consisting of continents and
         islands, and is widely covered by vegetation.</string>
-    <string name="affirmation5_1">Mars is the fourth planet and the furthest terrestrial
+    <string name="description5">Mars is the fourth planet and the furthest terrestrial
         planet from the Sun. The reddish color of its surface is due to finely grained
         iron(III) oxide dust in the soil, giving it the nickname "the Red Planet". Mars\’s
         radius is second smallest among the planets in the Solar System. Mars has two
         irregularly shaped natural
         satellites: Phobos and Deimos.</string>
-    <string name="affirmation6_1">The asteroid belt is a torus-shaped region in the Solar
+    <string name="description6">The asteroid belt is a torus-shaped region in the Solar
         System, centered on the Sun and roughly spanning the space between the orbits
         of the planets Jupiter and Mars. It contains a great many solid, irregularly
         shaped bodies called asteroids or minor planets. The identified objects are of many
         sizes, but much smaller than planets, and on average are about one million
         kilometers apart.</string>
-    <string name="affirmation7_1">Jupiter is the fifth planet from the Sun and the largest
+    <string name="description7">Jupiter is the fifth planet from the Sun and the largest
         in the Solar System. It is a gas giant with a mass more than two and a half times
         that of all the other planets in the Solar System combined, and slightly less
         than one one-thousandth the mass of the Sun. Jupiter is the third brightest natural
         object in the Earth\'s night sky after the Moon and Venus. Jupiter forms a system
         of 95 known moons and
         probably many more.</string>
-    <string name="affirmation8_1">Saturn is the sixth planet from the Sun and the
+    <string name="description8">Saturn is the sixth planet from the Sun and the
         second-largest in the Solar System, after Jupiter. The planet has a
         prominent ring system, which is composed mainly of ice particles, with a smaller
         amount of rocky debris and dust. At least 146 moons are known to orbit the planet,
         of which 63 are officially named, this does not include the hundreds of moonlets
         in its rings.</string>
-    <string name="affirmation9_1">Uranus is the seventh planet from the Sun and is a gaseous
+    <string name="description9">Uranus is the seventh planet from the Sun and is a gaseous
         cyan ice giant. Most of the planet is made out of water, ammonia, and methane in a
         supercritical phase of matter, which in astronomy is called \'ice\' or volatiles.
         The planet\'s atmosphere has a complex layered cloud structure and has the lowest
         minimum temperature of 49 K (−224 °C) out of all Solar System\'s planets.
         The Uranian axis of rotation is approximately parallel with the plane
         of the Solar System</string>
-    <string name="affirmation10_1">Neptune is the eighth planet from the Sun and the farthest
+    <string name="description10">Neptune is the eighth planet from the Sun and the farthest
         known planet in the Solar System. It is the fourth-largest planet in the Solar
         System by diameter, the third-most-massive planet, and the densest giant planet.
         Being composed primarily of gases and liquids, it has no well-defined solid surface.
         The planet orbits the Sun once every 164.8 years at an average distance of 30.1
         astronomical units (4.5 billion kilometres).</string>
-    <string name="affirmation11_1">The Kuiper belt is a circumstellar disc in the outer
+    <string name="description11">The Kuiper belt is a circumstellar disc in the outer
         Solar System, extending from the orbit of Neptune at 30 astronomical units (AU)
         to approximately 50 AU from the Sun.[2] It is similar to the asteroid belt, but
         is far larger—20 times as wide and 20–200 times as massive. Like the asteroid belt,
@@ -81,7 +81,7 @@
         While many asteroids are composed primarily of rock and metal, most Kuiper belt
         objects are composed largely of frozen volatiles (termed "ices"), such as methane,
         ammonia, and water.</string>
-    <string name="affirmation12_1">The Oort cloud is theorized to be a vast cloud composed
+    <string name="description12">The Oort cloud is theorized to be a vast cloud composed
         mainly of icy planetesimals surrounding the Sun at distances ranging from 2,000 to
         200,000 AU (0.03 to 3.2 light-years). The cloud is thought to comprise two regions:
         a disc-shaped inner Oort cloud aligned with the solar ecliptic and a spherical

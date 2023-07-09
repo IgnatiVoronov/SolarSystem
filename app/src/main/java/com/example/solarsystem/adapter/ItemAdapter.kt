@@ -2,51 +2,47 @@ package com.example.solarsystem.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.solarsystem.R
-import com.example.solarsystem.model.Affirmation
+import com.example.solarsystem.databinding.ListItemBinding
+import com.example.solarsystem.model.InformationModel
 
-/**
- * Adapter for the [RecyclerView] in [MainActivity]. Displays [Affirmation] data object.
- */
 class ItemAdapter(
     private val context: Context,
-    private val dataset: List<Affirmation>
+    private val dataset: List<InformationModel>,
+    val itemClickListener: (InformationModel) -> Unit
 ) : RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
 
-    // Provide a reference to the views for each data item
-    // Complex data items may need more than one view per item, and
-    // you provide access to all the views for a data item in a view holder.
-    // Each data item is just an Affirmation object.
-    class ItemViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
-        val textView: TextView = view.findViewById(R.id.item_title)
-        val textView_1: TextView = view.findViewById(R.id.item_description)
-        val imageView: ImageView = view.findViewById(R.id.item_image)
+    class ItemViewHolder(val binding: ListItemBinding) : RecyclerView.ViewHolder(binding.root) {
+
+        /*fun bindItem(item:InformationModel){
+            with(binding) {
+                itemTitle.text = item.title
+                itemDescription.text = item.description
+                itemImage.setImageResource(item.image)
+            }
+        }*/
+
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
         // create a new view
-        val adapterLayout = LayoutInflater.from(parent.context)
-            .inflate(R.layout.list_item, parent, false)
-        return ItemViewHolder(adapterLayout)
+        val binding = ListItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        return ItemViewHolder(binding)
     }
 
-    /**
-     * Return the size of your dataset (invoked by the layout manager)
-     */
     override fun getItemCount() = dataset.size
 
-    /**
-     * Replace the contents of a view (invoked by the layout manager)
-     */
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
-        val item = dataset[position]
-        holder.textView.text = context.resources.getString(item.stringResourceId)
-        holder.textView_1.text = context.resources.getString(item.stringResourceId_1)
-        holder.imageView.setImageResource(item.imageResourceId)
+        val currentItem = dataset[position]
+        holder.binding.itemTitle.text = context.resources.getString(currentItem.title)
+        holder.binding.itemDescription.text = context.resources.getString(currentItem.description)
+        holder.binding.itemImage.setImageResource(currentItem.image)
+
+        /*holder.bindItem(currentItem)*/
+
+        holder.binding.root.setOnClickListener {
+            itemClickListener(currentItem)
+        }
     }
 }
